@@ -5,23 +5,28 @@ import java.util.Arrays;
  */
 public class InclassExample {
 
-
+    public static double addition(double val1, double val2) {
+        return 0; // replace this 
+    }
 
 
 
 
     public static void main(String[] args) {
-        int A = 5;
-        int B = 2;
-        int C = 10;
-        System.out.println("Testing Before " + A);
-        System.out.println("Testing Before " + B);
-        System.out.println("Testing Before " + C);
-        A = B;
-        B = C;
-        System.out.println("Testing After " + A);
-        System.out.println("Testing After " + B);
-        System.out.println("Testing After " + C);
+       
+        double A, B, C;
+        A = 10;
+        A = A + 1;
+        B = A / 2;
+        A = 6;
+        C = B + 1;
+        C = C + 2;
+        A = B / 2;
+
+        System.out.println("A is " + A);
+        System.out.println("B is " + B);
+        System.out.println("C is " + C);
+        
     }
   
     
