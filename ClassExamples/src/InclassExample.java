@@ -1,32 +1,21 @@
-import java.util.Arrays;
 
 /**
  * @version 20210630
  */
 public class InclassExample {
 
-    public static double addition(double val1, double val2) {
-        return 0; // replace this 
+    // what do I need to do - sum, add two numbers
+    // great what are types - double, and I need them - so params
+    // return the answer of the addition, double
+    // all i need is here - static
+    public static boolean quickPractice1(int value) {
+        return value >= 100;
     }
-
-
-
-
+    
     public static void main(String[] args) {
-       
-        double A, B, C;
-        A = 10;
-        A = A + 1;
-        B = A / 2;
-        A = 6;
-        C = B + 1;
-        C = C + 2;
-        A = B / 2;
-
-        System.out.println("A is " + A);
-        System.out.println("B is " + B);
-        System.out.println("C is " + C);
-        
+        System.out.println(quickPractice1(100));  // prints true
+        System.out.println(quickPractice1(101));  // prints true
+        System.out.println(quickPractice1(99));   // prints false
     }
   
     
