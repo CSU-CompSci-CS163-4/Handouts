@@ -37,8 +37,11 @@ public class Exam1Review {
     public static void corgi() {
         int pug = 10;
         int corgi = 2;
+        int counter = 1;
         while(corgi <= pug){ // loop 1
+            
             pug -= corgi;
+            System.out.printf("TESTING count: %d, pug %d, corgi %d%n", counter++, pug, corgi);
         }
         System.out.println(pug); // question 2
 
@@ -55,11 +58,11 @@ public class Exam1Review {
         System.out.println(formatterC("Monkey", 10));   // line 1
         System.out.println(formatterC("Monkey", 3));   // line 2
         corgi();
-        System.out.println(branchingCheck(10,9,8));
+        /*System.out.println(branchingCheck(10,9,8));
         System.out.println(branchingCheck(8,10,20));
         System.out.println(branchingCheck(0, 0, 0));
         System.out.println(branchingCheck(3, 0, 1));
-        System.out.println(branchingCheck(0, 1, 2));
+        System.out.println(branchingCheck(0, 1, 2));*/
         
         
     }
