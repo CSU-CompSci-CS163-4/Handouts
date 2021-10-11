@@ -13,10 +13,11 @@ public class Unit2Review_FileReading {
             String[] line = scanner.nextLine().split(",");
             System.out.println(line[ 1 ]);
             System.out.println(scanner.next());
-            scanner.nextLine();
+            System.out.print(scanner.nextLine());
             System.out.println(scanner.nextLine().split(",")[ 0 ]);
         }catch(Exception ex) {
             System.out.println("Exception!");
+            ex.printStackTrace();
         }
     }
 
