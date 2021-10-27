@@ -3,12 +3,12 @@
  */
 public class Exam1Review {
     
-    public static void question1() {
+   /* public static void question1() {
        // char bill = "bill";
         char rory = 57;
         char amy = 'p';
         char f, z;
-    }
+    }*/
 
 
     public static String branchingCheck(int valOne, int valTwo, 
