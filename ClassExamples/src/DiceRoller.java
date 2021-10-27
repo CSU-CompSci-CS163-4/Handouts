@@ -6,5 +6,6 @@ public class DiceRoller {
     public static int roll(DiceType dice) {
         // do my switch
         // with random
+        return 0;
     }
 }

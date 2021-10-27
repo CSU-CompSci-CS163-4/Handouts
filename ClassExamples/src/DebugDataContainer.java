@@ -7,7 +7,7 @@ public class DebugDataContainer {
     private String data = "";
     
     public DebugDataContainer(String data, int value) {
-        data = data;
+        this.data = data;
         setValue(value);
     }
     
