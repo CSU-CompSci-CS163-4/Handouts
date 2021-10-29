@@ -6,7 +6,7 @@
 
 .idea
 *.iml
-
+*.class
 
 # Default Excludes
 
