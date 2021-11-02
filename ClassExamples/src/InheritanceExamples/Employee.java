@@ -20,4 +20,7 @@ public class Employee {
         return "Unknown";
     }
     
+    public String toString() {
+        return String.format("Employee id: %-4s Job Code: %s", getID(), getJobCode());
+    }
 }
