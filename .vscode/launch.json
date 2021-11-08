@@ -6,9 +6,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Unit3Review",
+            "request": "launch",
+            "mainClass": "Unit3Review",
+            "cwd":"${workspaceFolder}/ClassExamples/"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${file}",
+            "cwd": "${workspaceFolder}/ClassExamples/"
         },
         {
             "type": "java",
@@ -44,8 +52,7 @@
             "request": "launch",
             "mainClass": "InheritanceExamples.SoftwareEngineer",
             "projectName": "handouts_91f835e7",
-            "cwd":"${workspaceFolder}/ClassExamples/src/InheritanceExamples"
-
+            "cwd": "${workspaceFolder}/ClassExamples/src/InheritanceExamples"
         },
         {
             "type": "java",
@@ -94,7 +101,8 @@
             "name": "Launch Unit2Review_FileReading",
             "request": "launch",
             "mainClass": "Unit2Review_FileReading",
-            "projectName": "handouts_91f835e7"
+            "projectName": "handouts_91f835e7",
+            "cwd": "${workspaceFolder}/ClassExamples/"
         }
     ]
 }
