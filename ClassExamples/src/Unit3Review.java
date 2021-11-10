@@ -1,6 +1,9 @@
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Arrays;
+
+
 
 /**
  * Unit3Review
@@ -61,13 +64,50 @@ public class Unit3Review {
         return bld.toString();
     }
 
+    public static void inPlace(int[] array, int pos1, int pos2) {
+        if (pos2 <= pos1) return; // don't run anymore
+        int tmp = array[pos1];
+        array[pos1] = array[pos2];
+        array[pos2] = tmp; 
+        inPlace(array, ++pos1, --pos2);
+    }
+
+    public static void inPlace(int[] array) {
+        inPlace(array, 0, array.length-1);
+    }
+
     public static void main(String[] args) {
         System.out.println(loopExample());
+        int[] arr = {10, 2, 3, 1, 5, 9};
+        inPlace(arr);
+        System.out.println(Arrays.toString(arr));
       //  basicArray();
         /*String[][] csv_data = { { "Row1", "Header Value", "Header Value" },    
                 {"Row2", "some value", "3" },
                 { "Row3", "some value3", "three" } };
         printWriter(csv_data);*/
+
+        String[] widgets = {"Phones", "Boxes", "Toys"};
+        Review3 one = new Review3("hema", widgets);
+        System.out.println(Review3.counter);
+        Review3 two = new Review3("akau", widgets);
+        System.out.println(Review3.counter);
+        System.out.println(one.getName());
+
+        System.out.println(one);
+        System.out.println(two);
+
+        ArrayList<Review3Super> list = new ArrayList<>();
+        list.add(one);
+        list.add(two);
+        System.out.println(list);
+        list.remove(0);
+        System.out.println(list);
+        list.add(0, one);
+        System.out.println(list);
+        list.add(one.copy());
+        System.out.println(list);
+
 
     }
 }
