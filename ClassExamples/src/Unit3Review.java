@@ -21,6 +21,11 @@ public class Unit3Review {
         for(int val : values) {
             val += 10;
         }
+        for(int i = 0; i < values.length; i++) {
+            int val = values[i];
+            val += 10;
+        }
+
         System.out.println(Arrays.toString(values));
 
         String[] values2 = new String[3];
@@ -45,11 +50,13 @@ public class Unit3Review {
         // print writer takes a Steam to Write to
         File file = new File("ouptut.txt"); // creates a steam to a file
         try {
-            PrintWriter writer = new PrintWriter(file);
+            //PrintWriter writer = new PrintWriter(file);
+            PrintWriter writer = new PrintWriter(System.out);
             for(String[] row : values) {
                 writer.println(stringToCSV(row));    
             }
-            writer.close(); // else it won't save it!
+            System.out.println("Before Close");
+            //writer.close(); // else it won't save it!
         } catch (Exception e) {
             e.printStackTrace();
         }
