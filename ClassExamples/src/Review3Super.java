@@ -8,5 +8,9 @@ public class Review3Super {
     public String getName() {
         return name;
     }
+
+    public String toString() {
+        return "address:" + super.toString() +",name:" + getName();
+    }
     
 }
