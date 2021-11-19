@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Knight extends MOB{
 
 
@@ -25,6 +28,14 @@ public class Knight extends MOB{
         return super.getArmor();
     }
 
+    @Override 
+    public int getMaxHP() {
+        if (activeFortune != null) {
+            return activeFortune.getMaxHP() + super.getMaxHP();
+        }
+        return super.getMaxHP();
+
+    }
     @Override
     public DiceType getDamageDie() {
         if(activeFortune != null) {
@@ -33,8 +44,12 @@ public class Knight extends MOB{
         return super.getDamageDie();
     }
 
+    public Integer getId() {
+        return this.id;
+    }
+
     public static void main(String[] args) {
-        Knight test1 = new Knight(10, "Gwain", 100, 20, 2, DiceType.D6, 0);
+        Knight test1 = new Knight(0, "Gwain", 100, 20, 2, DiceType.D6, 0);
         Knight test2 = new Knight(1, "Alice", 10, 10, 3, DiceType.D4, 100);
 
         Fortune fortune = new Fortune("name", 0, 10, 5, DiceType.valueOf("D4"));
@@ -42,8 +57,14 @@ public class Knight extends MOB{
         test1.setActiveFortune(fortune);
         System.out.println(test1.getDamageDie());
 
-        System.out.println(test1);
-        System.out.println(test2);
+        List<Knight> knights = new ArrayList<>();
+        knights.add(test1);
+        knights.add(test2);
+
+        for(Knight knight : knights) {
+            System.out.printf("%d: %s%n", knight.getId()+1, knight.getName());
+        }
+        
     }
     
 }
