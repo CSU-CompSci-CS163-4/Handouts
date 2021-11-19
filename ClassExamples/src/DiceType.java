@@ -1,7 +1,3 @@
-/**
- * @version 20211025
- */
 public enum DiceType {
-    d4,d6,d8
-    
+    D4, D6, D8, D10, D12, D20;
 }

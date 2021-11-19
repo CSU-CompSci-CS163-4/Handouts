@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Knight",
+            "request": "launch",
+            "mainClass": "Knight",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch MOB",
+            "request": "launch",
+            "mainClass": "MOB",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fortune",
+            "request": "launch",
+            "mainClass": "Fortune",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Polymorphism.Main",
