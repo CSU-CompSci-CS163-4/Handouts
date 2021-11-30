@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RecusionReadingExample",
+            "request": "launch",
+            "mainClass": "RecusionReadingExample",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
             "name": "Launch Knight",
             "request": "launch",
             "mainClass": "Knight",
