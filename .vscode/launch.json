@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CollectionsHashmapExample",
+            "request": "launch",
+            "mainClass": "CollectionsHashmapExample",
+            "projectName": "Handouts_dc5d3ea4"
+        },
+        {
+            "type": "java",
+            "name": "Launch CollectionsLinkedListExample",
+            "request": "launch",
+            "mainClass": "CollectionsLinkedListExample",
+            "projectName": "Handouts_dc5d3ea4"
+        },
+        {
+            "type": "java",
             "name": "Launch RecusionReadingExample",
             "request": "launch",
             "mainClass": "RecusionReadingExample",
