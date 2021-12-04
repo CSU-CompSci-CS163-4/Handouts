@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +13,11 @@ public class CollectionsHashmapExample {
         mapCountry.put("India", 1269000.0);
         System.out.println(mapCountry);
         //how to return a list of keys?
-        //System.out.println(keys);
+        Set<String> keys = mapCountry.keySet();
+    // String[] sorted = (String[])keys.toArray();
+      //  Arrays.sort(sorted);
+        //System.out.println(sorted);
+        System.out.println(keys);
         //how to return a list of values?
         //System.out.println(values);
     }

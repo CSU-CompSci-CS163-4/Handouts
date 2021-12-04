@@ -9,6 +9,20 @@
             "name": "Launch CollectionsHashmapExample",
             "request": "launch",
             "mainClass": "CollectionsHashmapExample",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CollectionsLinkedListExample",
+            "request": "launch",
+            "mainClass": "CollectionsLinkedListExample",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CollectionsHashmapExample",
+            "request": "launch",
+            "mainClass": "CollectionsHashmapExample",
             "projectName": "Handouts_dc5d3ea4"
         },
         {
