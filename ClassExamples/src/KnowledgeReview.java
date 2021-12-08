@@ -22,10 +22,23 @@ public class KnowledgeReview {
         return ans;
     }
 
+    public static void arrayTests() {
+        String[][] knights = new String[100][]; 
+        System.out.println(knights[89]);
+        knights[1] = new String[]{"42 is the answer"};
+        knights[0] = new String[]{"hello", "world"};
+        knights[2] = new String[]{"look"};
+        System.out.println(knights[0][1]);
+        Object obj = knights;
+        System.out.println(obj);
+
+    }
     public static void main(String[] args) {
         KnowledgeReview review = new KnowledgeReview();
-        System.out.println(review.fibLoop(160));
-        System.out.println(review.method(160));   
+     //   System.out.println(review.fibLoop(160));
+     //   System.out.println(review.method(160)); 
+        arrayTests();
+        
     }
     
 }
