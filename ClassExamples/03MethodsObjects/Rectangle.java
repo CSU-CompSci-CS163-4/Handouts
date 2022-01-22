@@ -1,5 +1,5 @@
 public class Rectangle {
-    int width = 0;  // instance variables
+    int width = 0;  
     int length = 0;
 
     public void setLength(int length) { 
@@ -11,7 +11,11 @@ public class Rectangle {
     }
 
     public int getArea() { 
-        return width * length; 
+        return calcArea(width, length); 
+    }
+
+    public static int calcArea(int width, int length) {
+        return width*length;
     }
 
     public static void main(String[] args) {
