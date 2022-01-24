@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SeatFinder",
+            "request": "launch",
+            "mainClass": "SeatFinder",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
             "name": "Launch KnowledgeReview",
             "request": "launch",
             "mainClass": "KnowledgeReview",

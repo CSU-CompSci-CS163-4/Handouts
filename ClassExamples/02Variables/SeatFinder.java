@@ -11,9 +11,10 @@ public class SeatFinder {
 
         System.out.print("Enter a seat number: ");
 
-        int seatNumber = scanner.nextInt()-1;
-        int row = seatNumber / rowSize;
-        int seat = seatNumber % rowSize;
+        int number = scanner.nextInt()-1;
+
+        int row = number / rowSize;
+        int seat = number % rowSize;
 
         System.out.println();
         System.out.println("The student can be found in row: " + (row+1) + 
