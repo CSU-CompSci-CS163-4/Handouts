@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch InclassActivity",
+            "request": "launch",
+            "mainClass": "InclassActivity",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
             "name": "Launch SeatFinder",
             "request": "launch",
             "mainClass": "SeatFinder",
