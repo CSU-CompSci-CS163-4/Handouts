@@ -38,7 +38,7 @@ public class InclassActivity {
         simpleLoop(9);
         System.out.println();
         InclassActivity activity = new InclassActivity();
-        activity.run();
+       // activity.run();
     }
 
 
@@ -50,9 +50,9 @@ public class InclassActivity {
         }
         System.out.println();
         // insert for loop here
-        for (int x = 1; x <= total; x++) {
-            System.out.print(x + ",");
-        }
+       for(int x = 1; x <= total; x++) {
+           System.out.print(x + ",");
+       }
     }
     
 }
