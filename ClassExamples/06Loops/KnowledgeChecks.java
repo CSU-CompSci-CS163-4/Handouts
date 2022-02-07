@@ -5,7 +5,7 @@ public class KnowledgeChecks {
 
     public static void randomLoop() {
         Random rnd = new Random();
-        int inc = rnd.nextInt(3,4);
+        int inc = rnd.nextInt(4)+3;
         int max = rnd.nextInt(11);
         System.out.printf("inc=%d, max=%d%n", inc, max);
         for(int i = 0; i < max; i+=inc) {
