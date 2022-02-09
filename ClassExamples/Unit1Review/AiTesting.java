@@ -31,7 +31,7 @@ public class AiTesting {
     // things to do - format with different sizing and spaces
     // format with percent and decimal points
     public String formatString() {
-        return String.format("%s, %d", getName(), getYear()); // for now
+        return String.format("%-20S %d %f%%", getName(), getYear(), getPercentPassed()); // for now
     }
 
     public static void main(String[] args) {
@@ -40,6 +40,7 @@ public class AiTesting {
         AiTesting turing = new AiTesting();
         turing.setName("Turing");
         turing.setYear(1950);
+        turing.setPercentPassed(10/3.0);
         System.out.println(turing.formatString());
 
         AiTesting winograd = new AiTesting();

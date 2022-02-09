@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Unit1ReviewMethods",
+            "request": "launch",
+            "mainClass": "Unit1ReviewMethods",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch AiTesting",
+            "request": "launch",
+            "mainClass": "AiTesting",
+            "projectName": "handouts_91f835e7"
+        },
+        {
+            "type": "java",
             "name": "Launch InclassActivity",
             "request": "launch",
             "mainClass": "InclassActivity",
