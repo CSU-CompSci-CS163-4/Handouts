@@ -94,7 +94,7 @@ public class ForeachChecks {
     }
 
     public static void main(String[] args) {
-        testOne2();
+        testTwo2();
         
     }
     
