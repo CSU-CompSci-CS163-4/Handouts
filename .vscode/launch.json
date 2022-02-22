@@ -6,6 +6,33 @@
     "configurations": [
         {
             "type": "java",
+            "request": "attach",
+            "name": "Attach by Process ID",
+            "processId": "${command:PickJavaProcess}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "Handouts_9d17e0a8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cake",
+            "request": "launch",
+            "mainClass": "Cake",
+            "projectName": "Handouts_9d17e0a8"
+        },
+        {
+            "type": "java",
+            "name": "Launch BoundsChecker",
+            "request": "launch",
+            "mainClass": "BoundsChecker",
+            "projectName": "Handouts_9d17e0a8"
+        },
+        {
+            "type": "java",
             "name": "Launch Unit1ReviewMethods",
             "request": "launch",
             "mainClass": "Unit1ReviewMethods",

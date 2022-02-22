@@ -22,7 +22,29 @@ public class BoundsChecker {
     public static String boundsCheckConditionalsOnly(int upper, int lower, int value) {
        // TODO Task One for students
 
-        return null;
+       int nearUpper = upper-value;
+       int nearLower = value-lower;
+       if(value < lower){
+           return null;
+       }
+       else if(value >= upper){
+           return null;
+       }
+       
+       else if (value == lower){
+           if(value < upper){
+               if(nearUpper == nearLower){
+               return null;
+            }
+        }
+            else if(nearUpper < nearLower){
+               return "Near Upper";
+            }
+            else{
+               return "Near Lower";
+            }
+        }
+            return null;
     }
 
     /* just to make test printing easier */
