@@ -1,0 +1,8 @@
+TO: Alice
+FROM: Hatter
+SUBJECT: Red Queen
+BODY: To keep ahead, run from the red queen.
+TO: Hatter
+FROM: Red
+SUBJECT: New Hat
+BODY: Hatter, I need a new hat, and if I don't get it, you won't need one. *Kisses* Queen.
