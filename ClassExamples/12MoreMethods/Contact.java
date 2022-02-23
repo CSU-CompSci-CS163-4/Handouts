@@ -9,6 +9,16 @@ public class Contact {
     }
 
     // student task two, add the two constructors here!
+    public Contact(String name, String phone){
+        this.name = name;
+        setPhone(phone);
+        
+    }
+
+    public Contact(String name, long phone){
+        this.name = name;
+        setPhone(phone);
+    }
     
 
     public String getFormattedPhone() {
@@ -35,10 +45,20 @@ public class Contact {
 
     public void setPhone(long phone) {
         // Student task 2
+        this.phone = phone;
     }
 
     public void setPhone(String phone) {
        // STUDENT task 2
+       String sendBack = "";
+       for(int i = 0; i < phone.length(); i++){
+           char curDigit = phone.charAt(i);
+           if(Character.isDigit(curDigit)){
+               sendBack += curDigit;
+           }
+       }
+       long sentBack = Long.parseLong(sendBack);
+       setPhone(sentBack);
     }
 
     public String toString() {
