@@ -31,6 +31,7 @@ public class Stringchecks {
     String shorter = magic.substring(magic.indexOf("b"), 
                                  magic.indexOf("a", magic.indexOf("c"))+1);
     
+                                 System.out.println(shorter);
     String plant = "kinnikinnick";
     String p2 = plant.substring(plant.indexOf("k"),
             plant.indexOf("k", plant.indexOf("i"))+1);
