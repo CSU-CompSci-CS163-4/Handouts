@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>16IntroInheritance</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Unit2ExamReview</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,11 +14579,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Introduction-to-Inheritance">Introduction to Inheritance<a class="anchor-link" href="#Introduction-to-Inheritance">&#182;</a></h1><p>In this lecture we will cover:</p>
+<h1 id="Unit-2-Review">Unit 2 Review<a class="anchor-link" href="#Unit-2-Review">&#182;</a></h1><p>Requested Review Topics:</p>
 <ul>
-<li>Four pillars of object oriented programming</li>
-<li>Basic inheritance</li>
-<li>The Java Object class</li>
+<li>Incrementor order precedence (++value vs value++)</li>
+<li>Do-while vs while loop</li>
+<li>this, and when to use it</li>
+<li>Overloaded Constructors</li>
+<li>Substrings and indexOf</li>
+<li>File input into into ArrayLists</li>
+<li>Inheritance<ul>
+<li>Especially knowledge check on what is printed from stimulus question</li>
+</ul>
+</li>
 </ul>
 <h3 id="Your-future-in-CS">Your future in CS<a class="anchor-link" href="#Your-future-in-CS">&#182;</a></h3><p>I used to include this on my slides, but since these slides have changed - going to just leave it up here for every notebook. I get a lot of questions about more programming courses, the concentrations, and minors in computer science. Here is a brief reminder.</p>
 <p>CS 165 – Next Course In Sequence, also consider CS 220 (math and stats especially)</p>
@@ -14625,63 +14632,14 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Four-Pillars-of-Object-Oriented-Programming">Four Pillars of Object Oriented Programming<a class="anchor-link" href="#Four-Pillars-of-Object-Oriented-Programming">&#182;</a></h2><ul>
-<li>Abstraction<ul>
-<li>You have practiced this already by building 'general' classes/types</li>
-<li>You can reuse these types in a variety of different ways</li>
+<h2 id="Incrementor">Incrementor<a class="anchor-link" href="#Incrementor">&#182;</a></h2><ul>
+<li><code>++value</code> - adds 1 to the value, and then uses the variable</li>
+<li><code>value++</code> - uses the value, and then adds 1 to it. </li>
 </ul>
-</li>
-<li>Encapsulation<ul>
-<li>You have practiced this by<ul>
-<li>Making classes wrap/focus on a single idea</li>
-<li>Controlled entry points into that class (public / private control)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Inheritance<ul>
-<li>The ability to create an <strong>is a</strong> relationship between classes</li>
-<li>Classes inherit from other classes, gaining their properties </li>
-</ul>
-</li>
-<li>Polymorphism <ul>
-<li>Intrinsically connected to Inheritance</li>
-<li>We will cover this in a future lecture in Unit 3</li>
-</ul>
-</li>
-</ul>
-<p>These are nice technical interview questions, but not something we talk about daily. Understanding them helps you understand the "why" on how java is designed (every class can be an object, and one class per file embodies encapsulation!)</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Inheritance">Inheritance<a class="anchor-link" href="#Inheritance">&#182;</a></h2><p><img style="float:right;margin-right:20px;width:300px" src="img/boxes.jfif" /></p>
-<ul>
-<li>Allows you to build relationships<ul>
-<li>Between a more general class (called superclass also parent class)</li>
-<li>And a more specialized class (called subclass or child class)</li>
-</ul>
-</li>
-<li>Or another way to look at it<ul>
-<li>By looking at types/ideas as generalized to more specific</li>
-<li>You can write your code <strong>once</strong> and let the more specialized classes use the generalized code</li>
-</ul>
-</li>
-</ul>
-<h3 id="Example:">Example:<a class="anchor-link" href="#Example:">&#182;</a></h3><ul>
-<li>Boxes come in different shapes and sizes<ul>
-<li>but a <em>cube</em> is a specific box with the sides the same in all dimensions</li>
-<li>Let's look at some code that represents it!</li>
-</ul>
-</li>
-</ul>
+<p>Good to know, but can technically program without them.</p>
+<p>For practice, Open an IDE - and create an class with a main method, and <strong>follow</strong> along with my example</p>
+<p>(we will keep coming back to that main method)</p>
+<p>What is printed (just write down the numbers of every step)?</p>
 
 </div>
 </div>
@@ -14694,34 +14652,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Box</span> <span class="p">{</span>
-    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">width</span><span class="p">;</span>
-    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">height</span><span class="p">;</span>
-    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">length</span><span class="p">;</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getArea</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">width</span><span class="o">*</span><span class="n">height</span><span class="o">*</span><span class="n">length</span><span class="p">;}</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;Width: %d, Height: %d, Length:%d&quot;</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">length</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="kd">public</span> <span class="nf">Box</span><span class="p">(</span><span class="kt">int</span> <span class="n">width</span><span class="p">,</span> <span class="kt">int</span> <span class="n">height</span><span class="p">,</span> <span class="kt">int</span> <span class="n">length</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">width</span><span class="p">;</span> 
-        <span class="k">this</span><span class="p">.</span><span class="na">height</span> <span class="o">=</span> <span class="n">height</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">length</span> <span class="o">=</span> <span class="n">length</span><span class="p">;</span>
-    <span class="p">}</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">+=</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;The value is %d, and the incremented value is %d&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">++</span><span class="p">,</span> <span class="n">value</span><span class="p">));</span>
 <span class="p">}</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CubeBox</span> <span class="kd">extends</span> <span class="n">Box</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="nf">CubeBox</span><span class="p">(</span><span class="kt">int</span> <span class="n">side</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">super</span><span class="p">(</span><span class="n">side</span><span class="p">,</span> <span class="n">side</span><span class="p">,</span> <span class="n">side</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;Side Size: %d&quot;</span><span class="p">,</span> <span class="n">width</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="n">Box</span> <span class="n">bx</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Box</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
-<span class="n">CubeBox</span> <span class="n">cb</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CubeBox</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bx</span> <span class="o">+</span> <span class="s">&quot; and the area is &quot;</span> <span class="o">+</span> <span class="n">bx</span><span class="p">.</span><span class="na">getArea</span><span class="p">());</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">cb</span> <span class="o">+</span> <span class="s">&quot; and the area is &quot;</span> <span class="o">+</span> <span class="n">cb</span><span class="p">.</span><span class="na">getArea</span><span class="p">());</span>
 </pre></div>
 
      </div>
@@ -14743,8 +14677,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Width: 10, Height: 12, Length:7 and the area is 840
-Side Size: 5 and the area is 125
+<pre>The value is 10, and the incremented value is 11
+The value is 11, and the incremented value is 12
+The value is 12, and the incremented value is 13
+The value is 13, and the incremented value is 14
+The value is 14, and the incremented value is 15
+The value is 15, and the incremented value is 16
+The value is 16, and the incremented value is 17
+The value is 17, and the incremented value is 18
+The value is 18, and the incremented value is 19
+The value is 19, and the incremented value is 20
 </pre>
 </div>
 </div>
@@ -14760,42 +14702,9 @@ Side Size: 5 and the area is 125
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<blockquote><p>Discussion<br>
-Discuss at your table what you notice about the code? Some is talked about in the reading, can you help each other understand it? We will talk about it in a moment, but for now take a moment to explain the code to others at the table.</p>
+<blockquote><p>Discussion Topic<br>
+As some folks are having trouble remembering the differences, what are some ways you can think of to help you remember the differences at your table.</p>
 </blockquote>
-<h3 id="Inheritance-Definitions">Inheritance Definitions<a class="anchor-link" href="#Inheritance-Definitions">&#182;</a></h3><ul>
-<li><strong>extends</strong> keyword says<ul>
-<li>Inherit the methods and properties (variables) from the superclass Box</li>
-<li>Critical word to have</li>
-</ul>
-</li>
-<li>CubeBox<ul>
-<li>has both the method created in CubeBox <em>plus</em> the methods in Box<ul>
-<li>getArea() is in both, functions the same in both!</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>super</strong> <ul>
-<li>Is you reference the superclass (parent). </li>
-<li>super(...) - is calling the parent classes constructor</li>
-<li>Not required, but common!</li>
-</ul>
-</li>
-<li><strong>protected</strong><ul>
-<li>New scope (you already know private and public)</li>
-<li>protected scope subclasses have direct access to, but only the current class and subclasses.</li>
-</ul>
-</li>
-<li>toString()?<ul>
-<li>both classes have a toString() method<ul>
-<li>which  means that specific classes version is called</li>
-<li>this is called <strong>Overwriting</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 
 </div>
 </div>
@@ -14807,18 +14716,12 @@ Discuss at your table what you notice about the code? Some is talked about in th
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="In-Class-Activity">In Class Activity<a class="anchor-link" href="#In-Class-Activity">&#182;</a></h3><p>You will find in canvas/zybooks/github the class <code>Employee.java</code>. It simply contains an employee ID and name.</p>
-<p>You goal is to write a new class (notice it is completely blank in zybooks) called <code>SoftwareEngineer.java</code></p>
-<ul>
-<li>SoftwareEngineer<ul>
-<li>sets the Employee pay scale to be 75,000-250,000</li>
-<li>has a jobcode associated with them</li>
-<li>needs a getJobCode() and setJobCode() method</li>
-<li>needs a constructor of the format <code>SoftwareEngineer(int id, String name)</code></li>
+<h2 id="Do-While-and-While-Loops">Do-While and While Loops<a class="anchor-link" href="#Do-While-and-While-Loops">&#182;</a></h2><ul>
+<li><strong>while</strong> loops - checks condition before running</li>
+<li><strong>do while</strong> loops - runs <em>once always</em>, and then checks the condition.</li>
 </ul>
-</li>
-<li>Make sure to write some tests, so you get something useful to print</li>
-</ul>
+<p>Really, it is in order of how you read it.</p>
+<p>Follow along again:</p>
 
 </div>
 </div>
@@ -14828,48 +14731,18 @@ Discuss at your table what you notice about the code? Some is talked about in th
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Employee</span> <span class="p">{</span>
-    <span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">pay_low</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">pay_high</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">employee_id</span><span class="p">;</span>
-    
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getLowPay</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">pay_low</span><span class="p">;}</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getMaxPay</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">pay_high</span><span class="p">;}</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getID</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">employee_id</span><span class="p">;}</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">name</span><span class="p">;}</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;}</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;Name: %s, ID: %d&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">employee_id</span><span class="p">);}</span>
-    <span class="kd">public</span> <span class="nf">Employee</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pay_low</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pay_high</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">employee_id</span> <span class="o">=</span> <span class="n">id</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">pay_low</span> <span class="o">=</span> <span class="n">pay_low</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">pay_high</span> <span class="o">=</span> <span class="n">pay_high</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-    
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SoftwareEngineer</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="p">{</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">jobCode</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="nf">SoftwareEngineer</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">super</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="mi">75000</span><span class="p">,</span> <span class="mi">250000</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setJobCode</span><span class="p">(</span><span class="n">String</span> <span class="n">code</span><span class="p">)</span> <span class="p">{</span> <span class="n">jobCode</span> <span class="o">=</span> <span class="n">code</span><span class="p">;}</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getJobCode</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">jobCode</span><span class="p">;}</span>
-
+<span class="k">while</span><span class="p">(</span><span class="n">val</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;While: Does this print?&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="n">Employee</span> <span class="n">hr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Employee</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s">&quot;Lucky Lou&quot;</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">60000</span><span class="p">);</span>
-<span class="n">SoftwareEngineer</span> <span class="n">se</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SoftwareEngineer</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="s">&quot;Alice Wonder&quot;</span><span class="p">);</span>
-<span class="n">se</span><span class="p">.</span><span class="na">setJobCode</span><span class="p">(</span><span class="s">&quot;REDQUEEN01&quot;</span><span class="p">);</span>
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">hr</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">se</span><span class="p">);</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Do-While: Does this print?&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="n">val</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">);</span>
 </pre></div>
 
      </div>
@@ -14891,8 +14764,7 @@ Discuss at your table what you notice about the code? Some is talked about in th
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Name: Lucky Lou, ID: 10
-Name: Alice Wonder, ID: 42
+<pre>Do-While: Does this print?
 </pre>
 </div>
 </div>
@@ -14908,34 +14780,152 @@ Name: Alice Wonder, ID: 42
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Object-class">Object class<a class="anchor-link" href="#Object-class">&#182;</a></h2><p><strong>All classes inherit from Object.java</strong></p>
-<p>This is assumed, and even if you don't put <em>extends Object</em>, it is already there.</p>
-<ul>
-<li>Another way to put it, Objects are the cells of Java, everything is based on them. </li>
-</ul>
-<p>Why is this beneficial?</p>
-<ul>
-<li>.toString()<ul>
-<li>This is implemented in object as returning the memory address</li>
-<li>As all classes have it, other objects (ArrayList) can use it to print!</li>
-<li>When you <strong>overwrite</strong> it, it calls your version of toString()</li>
-<li>You have already been doing this</li>
-</ul>
-</li>
-<li>.equals(Object)<ul>
-<li>By default compares the memory address</li>
-<li>However, String overwrites it to compare the characters in the string</li>
-<li>You can overwrite it in your classes to give meaning on comparing them</li>
-</ul>
-</li>
-</ul>
-<p>There are a lot of other methods Object provides to all classes you write, but those are the most common to overwrite (getHash() is another one).</p>
-<h3 id="In-Class-Activity-Two">In Class Activity Two<a class="anchor-link" href="#In-Class-Activity-Two">&#182;</a></h3><ul>
-<li>Add a toString method to SoftwareEngineer</li>
-<li>It should print out<div class="highlight"><pre><span></span>Name: name, ID: id, JobCode: jobcode
+<h2 id="this.">this.<a class="anchor-link" href="#this.">&#182;</a></h2><p><code>this</code> literally means "this instance / object", so used when you want to reference <em>instance</em> variables.</p>
+<p>Another way to look at it, let's take the following code - how will I fix this code??</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setID</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">id</span> <span class="o">=</span> <span class="n">id</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;ID:%d&quot;</span><span class="p">,</span> <span class="n">id</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Student</span> <span class="n">stuie</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">();</span>
+<span class="n">stuie</span><span class="p">.</span><span class="na">setID</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">stuie</span><span class="p">);</span>
 </pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>ID:10
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let's step through each line of code looking at the memory.</p>
+<div class="highlight"><pre><span></span><span class="n">Student</span> <span class="n">stuie</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">();</span>
+</pre></div>
+<p>We see the <em>new</em> keyword, which means create a new table:</p>
+<h4 id="Student@x131">Student@x131<a class="anchor-link" href="#Student@x131">&#182;</a></h4><table>
+<thead><tr>
+<th>variable</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="The-Stack-(initial-memory-location)">The Stack (initial memory location)<a class="anchor-link" href="#The-Stack-(initial-memory-location)">&#182;</a></h4><table>
+<thead><tr>
+<th>variable</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stuie</td>
+<td>Student@x131</td>
+</tr>
+</tbody>
+</table>
+<p>Now, we call the following line of code</p>
+<div class="highlight"><pre><span></span><span class="n">stuie</span><span class="p">.</span><span class="na">setID</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+</pre></div>
+<p>Which means, we are <em>inside</em> of stuie, giving us access to the following variables:</p>
+<h4 id=".setID(10)">.setID(10)<a class="anchor-link" href="#.setID(10)">&#182;</a></h4><table>
+<thead><tr>
+<th>variable</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>10</td>
+</tr>
+<tr>
+<td>this.id</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>this being the <strong>instance</strong> variable in the current active object.</p>
+<p>Without this, how would java know which <code>id</code> to access? It really wouldn't, so it grabs the first one.</p>
+<p>Using <code>this</code> helps us access the instance / object variable, to either use or set it to a different value, which is what <code>setID(int)</code> does.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Overloaded-Constructors-and-this()">Overloaded Constructors and this()<a class="anchor-link" href="#Overloaded-Constructors-and-this()">&#182;</a></h2><blockquote><p>Discussion<br>
+What is an overloaded <strong>method</strong>?<br>
+Why are they useful?</p>
+</blockquote>
+<h3 id="Overloaded-Constructors">Overloaded Constructors<a class="anchor-link" href="#Overloaded-Constructors">&#182;</a></h3><ul>
+<li>Constructors are specialized methods whose purpose is to 'build' the object<ul>
+<li>They can only be called via the 'new' keyword</li>
+</ul>
+</li>
+<li>Overloading a Constructor is just like overloading a method!<ul>
+<li>It creates optional ways to create objects.</li>
+</ul>
 </li>
 </ul>
+<p>Let's take the following "student" sometimes we want to have just an id, and other times we want a name and id.</p>
 
 </div>
 </div>
@@ -14948,25 +14938,26 @@ Name: Alice Wonder, ID: 42
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SoftwareEngineer</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="p">{</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">jobCode</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
 
-    <span class="kd">public</span> <span class="nf">SoftwareEngineer</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">super</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="mi">75000</span><span class="p">,</span> <span class="mi">250000</span><span class="p">);</span>
+    <span class="kd">public</span> <span class="nf">Student</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">setID</span><span class="p">(</span><span class="n">id</span><span class="p">);</span> 
     <span class="p">}</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setJobCode</span><span class="p">(</span><span class="n">String</span> <span class="n">code</span><span class="p">)</span> <span class="p">{</span> <span class="n">jobCode</span> <span class="o">=</span> <span class="n">code</span><span class="p">;}</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getJobCode</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">jobCode</span><span class="p">;}</span>
+    <span class="kd">public</span> <span class="nf">Student</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">id</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>  <span class="c1">// but wait! isn&#39;t this the same code in Student(int)!!</span>
+        <span class="n">setName</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="kd">super</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;, JobCode: &quot;</span> <span class="o">+</span> <span class="n">getJobCode</span><span class="p">();}</span>
-
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setID</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span> <span class="p">{</span> <span class="n">id</span> <span class="o">=</span> <span class="n">id</span><span class="p">;}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;}</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;Name:%s, ID:%d&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">id</span><span class="p">);}</span>
 <span class="p">}</span>
 
-<span class="n">Employee</span> <span class="n">hr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Employee</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s">&quot;Lucky Lou&quot;</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">60000</span><span class="p">);</span>
-<span class="n">SoftwareEngineer</span> <span class="n">se</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SoftwareEngineer</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="s">&quot;Alice Wonder&quot;</span><span class="p">);</span>
-<span class="n">se</span><span class="p">.</span><span class="na">setJobCode</span><span class="p">(</span><span class="s">&quot;REDQUEEN01&quot;</span><span class="p">);</span>
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">hr</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">se</span><span class="p">);</span>
+<span class="n">Student</span> <span class="n">stuie</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&quot;Stewie&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+<span class="n">stuie</span><span class="p">.</span><span class="na">setID</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">stuie</span><span class="p">);</span>
 </pre></div>
 
      </div>
@@ -14988,8 +14979,7 @@ Name: Alice Wonder, ID: 42
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Name: Lucky Lou, ID: 10
-Name: Alice Wonder, ID: 42, JobCode: REDQUEEN01
+<pre>Name:Stewie, ID:5
 </pre>
 </div>
 </div>
@@ -15005,24 +14995,225 @@ Name: Alice Wonder, ID: 42, JobCode: REDQUEEN01
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Overview">Overview<a class="anchor-link" href="#Overview">&#182;</a></h2><p>General rules for inheritance</p>
+<p>Notice the 'but wait!' comment.</p>
+<p>Just like overloaded methods, you often want to keep your code <em>DRY</em>. However, java requires a special keyword for that</p>
+<div class="highlight"><pre><span></span><span class="k">this</span><span class="p">(</span><span class="n">values</span><span class="p">);</span>
+</pre></div>
+<p>Notice the parans (not the same as <code>this.</code>). It is saying, use the 'constructor' of this format, to help me build the  instance of this object. Let's change the code above and see!</p>
+<p>Caveat - Java requires it to always be the <em>first line</em> of another constructor (just how they built it).</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Substring-and-IndexOf">Substring and IndexOf<a class="anchor-link" href="#Substring-and-IndexOf">&#182;</a></h2><ul>
+<li>substring(start, end) - takes the substring from index start (inclusive) to index end (exclusive)<ul>
+<li>Since it takes int values, it pairs well with indexOf.</li>
+</ul>
+</li>
+<li>indexOf(string or char) - gives you the location where that item <strong>first</strong> shows up or -1 if it isn't in the string</li>
+<li>indexOf(string or char, int) - gives you the location of the item the first time it shows up after (including) the int location for starting<ul>
+<li><code>indexOf(string or char)</code> is the equivalent of <code>indexOf(string or char, 0)</code></li>
+</ul>
+</li>
+</ul>
+<p>So let's take the following code</p>
+<div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">knocker</span> <span class="o">=</span> <span class="s">&quot;tattarrattat&quot;</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">knock</span> <span class="o">=</span> <span class="n">knocker</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">knocker</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;r&quot;</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">knocker</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;t&quot;</span><span class="p">,</span> <span class="n">knocker</span><span class="p">.</span><span class="na">length</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+</pre></div>
+<p>Step 1: I would write out the string, and put the indices under it!</p>
+<table>
+<thead><tr>
+<th>t</th>
+<th>a</th>
+<th>t</th>
+<th>t</th>
+<th>a</th>
+<th>r</th>
+<th>r</th>
+<th>a</th>
+<th>t</th>
+<th>t</th>
+<th>a</th>
+<th>t</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<p>Step 2: read the code and take it in <strong>smaller parts</strong> (divide-conquer-glue)</p>
 <ul>
-<li>Use it. The <em>is a</em> relationship is valuable<ul>
-<li>Good inheritance saves you time writing code</li>
-<li>Bad inheritance increases work loads</li>
-</ul>
-</li>
-<li>Really focus on the idea and breaking up the idea</li>
-<li>If you can, call the superclass methods with slight modifications<ul>
-<li>This helps incase the superclass changes implementations</li>
-</ul>
-</li>
-<li>Right now the primary reason for inheritance?<ul>
-<li>Keeping your code DRY</li>
-<li>In the future, we will learn about polymorphism which doubles the power of inheritance. </li>
-</ul>
+<li>knocker.indexOf("r") + 1 - i know this starts at 0, goes to r, but then adds 1 to it<ul>
+<li>5+1 = 6</li>
+<li><div class="highlight"><pre><span></span><span class="n">knocker</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="p">...)</span>
+</pre></div>
 </li>
 </ul>
+</li>
+<li>knocker.length()-1 <ul>
+<li>12 - 1 = 11</li>
+<li><div class="highlight"><pre><span></span><span class="n">knocker</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;t&quot;</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<ul>
+<li>11 + 1 = 12</li>
+<li>yes, just a way to grab the last T</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><div class="highlight"><pre><span></span><span class="n">knocker</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">12</span><span class="p">);</span>
+</pre></div>
+</li>
+<li>I then remind myself inclusive, exclusive</li>
+</ul>
+<table>
+<thead><tr>
+<th>r</th>
+<th>a</th>
+<th>t</th>
+<th>t</th>
+<th>a</th>
+<th>t</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<p>The last part, I would often do just by circling or underlining.</p>
+<h4 id="IMPORTANT!">IMPORTANT!<a class="anchor-link" href="#IMPORTANT!">&#182;</a></h4><p>Write it out with index numbers. <strong>REALLY</strong> easy to get an OB1 error without it.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// your turn - at the table, work it out with the same steps above!</span>
+
+<span class="n">String</span> <span class="n">plant</span> <span class="o">=</span> <span class="s">&quot;kinnikinnick&quot;</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">p2</span> <span class="o">=</span> <span class="n">plant</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">plant</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;k&quot;</span><span class="p">),</span>
+            <span class="n">plant</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;k&quot;</span><span class="p">,</span> <span class="n">plant</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;i&quot;</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">p2</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>kinnik
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="File-Input:">File Input:<a class="anchor-link" href="#File-Input:">&#182;</a></h2><p>File input into ArrayList?</p>
+<h3 id="Small-but-very-important-difference!">Small but very important difference!<a class="anchor-link" href="#Small-but-very-important-difference!">&#182;</a></h3><p>File input is into <strong>Strings</strong> (for now). We <em>then</em> take those strings, and use them how we want - often putting them in ArrayLists.</p>
+<p>Let's look at code, and build it up!</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="nf">readFileIntoArrayList</span><span class="p">(</span><span class="n">String</span> <span class="n">filename</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">lines</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">Scanner</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">filename</span><span class="p">));</span>
+        
+    <span class="p">}</span><span class="k">catch</span><span class="p">(</span><span class="n">IOException</span> <span class="n">ex</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ex</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">lines</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">lines</span> <span class="o">=</span> <span class="n">readFileIntoArrayList</span><span class="p">(</span><span class="s">&quot;data/students.csv&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Inheritance">Inheritance<a class="anchor-link" href="#Inheritance">&#182;</a></h2><p>We will switch over to a knowledge check for this one</p>
 
 </div>
 </div>
