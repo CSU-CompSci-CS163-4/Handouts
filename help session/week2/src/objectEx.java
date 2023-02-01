@@ -26,7 +26,8 @@ public class objectEx {
         
         objectEx ex2 = new objectEx(5, 6);
         System.out.println(ex2.getB());
-        System.out.println(ex2.getB());
+        System.out.println(ex.getB());
+        //notice difference in output
 
     }
 }
