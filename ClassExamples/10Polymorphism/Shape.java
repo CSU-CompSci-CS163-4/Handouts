@@ -1,4 +1,4 @@
-public abstract class Shape {
+public class Shape {
     protected int sides;
     private String color;
     public Shape(int sides, String color) {
